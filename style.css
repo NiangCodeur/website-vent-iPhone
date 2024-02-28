@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 2%;
+  height: 122px;
+  align-items: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+}
+header.fixed {
+  background: #fff;
+  padding: 0px 2%;
+  z-index: 2;
+}
+img {
+  cursor: pointer;
+}
+
+/* --------navbar--------------- */
+.navbar ul li {
+  display: inline-block;
+  padding: 8px 12px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #9fa0a6;
+}
+.navbar ul li a:hover {
+  color: #c831df;
+}
+
+.navbar hr {
+  width: 100%;
+  height: 3px;
+  background: #c831df;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 10px;
+}
+/* --------search----------- */
+.recherche {
+  border: 1px solid #d1d1d1;
+  padding: 8px 12px;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+}
+.recherche input {
+  width: 200px;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 300px;
+}
+.recherche img {
+  width: 20px;
+}
+/* --------text----------- */
+.text {
+  display: flex;
+  justify-content: space-between;
+}
+.text h1 {
+  font-size: 60px;
+  padding: 80px 80px;
+  max-width: 50%;
+  color: #c831df;
+}
+
+.text span {
+  color: #4ccac6;
+}
+
+.drop {
+  position: absolute;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background: linear-gradient(#c831df, #4ccac6);
+  right: 0;
+  height: 81vh;
+  width: 50%;
+}
+.text img {
+  position: absolute;
+  margin-left: 50%;
+  animation: anim 3s linear;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(-120px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* ------------section_boutique---------------- */
+.container {
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.title h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.title hr {
+  width: 15%;
+  height: 6px;
+  border-radius: 10px;
+  border: 0;
+  background: #c831df;
+  margin-left: 42%;
+  margin-top: 20px;
+}
+.box {
+  margin-top: 30px;
+  width: 25%;
+  min-width: 200px;
+  padding: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+  transition: 1s;
+}
+
+.box img {
+  width: 100%;
+  transition: 0.5s;
+}
+.box:hover {
+  transform: scale(-0.7, 1);
+}
+.container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* -----colors------ */
+.colors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.colors span {
+  background: var(--i);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.details {
+  margin-top: 10px;
+}
+/* ---------A propos---------- */
+.apropos {
+  display: flex;
+  align-items: center;
+  padding: 40px 80px;
+}
+.apropos p {
+  font-size: 20px;
+}
+/* ----------Contact--------------- */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 90px;
+}
+form {
+  width: 480px;
+  height: 350px;
+  background: linear-gradient(#c831df, #4ccac6);
+  border-radius: 20px;
+  padding: 0 30px;
+}
+.col {
+  width: 100%;
+  padding: 5%;
+}
+.col input {
+  width: 350px;
+  height: 60px;
+  outline: 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  color: #fff;
+}
+
+input[type="submit"] {
+  height: 60px;
+  background: #fff;
+  color: #c831df;
+  font-size: 18px;
+  border-radius: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+input[type="submit"]:hover {
+  background: #c831df;
+  color: #fff;
+  border: 0;
+}
+/* ---------footer---------- */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.footer .logo img {
+  width: 30%;
+}
+.footer-list {
+  width: 20%;
+  display: flex;
+  margin-left: -40%;
+}
+.footer-list li {
+  /* display: inline-block; */
+  padding: 8px 20px;
+  list-style: none;
+}
+.footer-list li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+.social-icon {
+  width: 20%;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.copyright hr {
+  width: 80%;
+  height: 3px;
+  background: #d7d7d7;
+  border: 0;
+  border-radius: 10px;
+}
